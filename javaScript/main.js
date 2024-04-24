@@ -15,6 +15,17 @@ document.getElementById("next").addEventListener("click", function () {
     slides[slideSelected].classList.add("active")
 })
 
+document.getElementById("previous").addEventListener("click", function () {
+    slides[slideSelected].classList.remove("active");
+    if (slideSelected > 0){
+        slideSelected--;
+    }
+    else {
+        slideSelected = 4;
+    }
+    slides[slideSelected].classList.add("active")
+})
+
 
 
 // slides[0].classList.add("active")
