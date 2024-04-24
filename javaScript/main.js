@@ -4,9 +4,9 @@ let attiva = document.getElementsByClassName("active");
 let nonAttiva = document.getElementsByClassName("none");
 let nSlides = slides.length;
 
-let slideSelected = 1;
-
 // devo far cambiare l'immagine
-    
-attiva.classList.remove("active")
-
+slides[0].classList.add("active")
+if (slides[0].classList.contains("active")) {
+    slides[0].classList.remove("active")
+    slides[1].classList.add("active")
+}

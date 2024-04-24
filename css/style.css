@@ -15,6 +15,7 @@
 
 .img-card {
     width: 500px;
+    display: none;
 }
 
 .img {
@@ -23,8 +24,4 @@
 
 .active {
     display: block;
-}
-
-.none {
-    display: none;
 }
